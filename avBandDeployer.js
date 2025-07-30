@@ -19,6 +19,8 @@ export function initAVDeployer(scene, materialBank) {
     const ringMesh = new THREE.Mesh(ringGeo, ringMat);
     ringMesh.rotation.x = Math.PI / 2;
     scene.add(ringMesh);
+    return { placeCap };
+
   }
 
   // 🧩 Cap placement stub
