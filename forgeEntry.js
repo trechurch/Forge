@@ -14,6 +14,21 @@ document.addEventListener('DOMContentLoaded', () => {
   initAVDeployer(scene, materialBank);
   buildTexturePanel(materialBank);
 
+  import { initAVDeployer } from './avBandDeployer.js';
+// ⚠️ Make sure avBandDeployer returns { placeCap } now
+
+// After panel builds
+const { placeCap } = initAVDeployer(scene, materialBank);
+
+document.getElementById('deploy-btn').addEventListener('click', () => {
+  const tier = parseInt(document.getElementById('tier-input').value);
+  const lat = parseFloat(document.getElementById('lat-input').value);
+  const lon = parseFloat(document.getElementById('lon-input').value);
+  const materialId = document.getElementById('mat-input').value;
+
+  placeCap({ tier, lat, lon, materialId });
+});
+
   camera.position.z = 5;
 
   function animate() {
