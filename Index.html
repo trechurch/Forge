@@ -10,6 +10,21 @@
   <!-- 🔧 Forge Panel -->
   <div id="forge-ui" class="panel"></div>
 
+  <!-- 🧢 Cap Input Controls -->
+<div id="cap-control-ui" class="panel">
+  <label>Tier: <input type="number" id="tier-input" value="1" min="1" /></label>
+  <label>Latitude: <input type="number" id="lat-input" value="0" step="0.1" /></label>
+  <label>Longitude: <input type="number" id="lon-input" value="0" step="0.1" /></label>
+  <label>Material ID: 
+    <select id="mat-input">
+      <option value="moon">moon</option>
+      <option value="earth">earth</option>
+      <option value="starfield">starfield</option>
+    </select>
+  </label>
+  <button id="deploy-btn">Deploy Cap</button>
+</div>
+
   <!-- 🌌 Texture Assignment Panel -->
   <div id="texture-ui" class="panel"></div>
 
