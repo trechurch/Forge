@@ -1,3 +1,7 @@
+// texturePanal.js
+
+import { bindWhenReady } from './uiReady.js';
+
 import * as THREE from 'three';
 
 export function buildTexturePanel(materialBank) {
