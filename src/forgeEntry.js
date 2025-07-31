@@ -14,7 +14,10 @@ initDOM({
   'lat-input': { tag: 'input' },
   'lon-input': { tag: 'input' },
   'mat-input': { tag: 'input' },
-  'deploy-btn': { tag: 'button' }
+  'deploy-btn': { tag: 'button' },
+  'forge-panel': { classes: ['ui-zone'] },
+  'inspector-panel': { classes: ['ui-zone'] }
+
 });
 
 // 🪐 Three.js setup
