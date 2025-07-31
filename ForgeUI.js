@@ -1,5 +1,5 @@
 // ForgeUI.js
-
+import { bindWhenReady } from './uiReady.js';
 import { forgeAvBands } from './forgeBands.js';
 
 export function setupForgeUI({ scene, materialFn }) {
