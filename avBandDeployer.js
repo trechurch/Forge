@@ -1,3 +1,5 @@
+// avBandDeployer.js
+import { bindWhenReady } from './uiReady.js';
 import * as THREE from 'three';
 
 export function initAVDeployer(scene, materialBank) {
