@@ -1,4 +1,4 @@
-// domInit.js
+// ./src/domInit.js
 
 export function initDOM({ containerMap }) {
   Object.entries(containerMap).forEach(([id, options]) => {
