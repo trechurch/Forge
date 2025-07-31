@@ -1,3 +1,7 @@
+// materialBank.js
+
+import { bindWhenReady } from './uiReady.js';
+
 export const materialBank = {
   earth: null,
   moon: null,
