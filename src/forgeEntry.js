@@ -23,6 +23,11 @@ import { initYThree } from './YThreeRenderer.js';
 
 initYThree();
 
+import { initForgeUI } from './capUi.js';
+
+initForgeUI({ onDeploy: placeCap });
+
+
 // 🪐 Three.js setup
   const scene = new THREE.Scene();
   const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
