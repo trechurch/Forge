@@ -1,5 +1,7 @@
 // avTierGenerator.js
 
+import { bindWhenReady } from './uiReady.js';
+
 export function generateAvTier({
   altitude = 120000,      // central altitude of band
   thickness = 5000,        // vertical spread
