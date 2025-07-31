@@ -18,6 +18,7 @@ export function initYThree() {
   light.position.set(0, 100, 100).normalize();
   scene.add(light);
 
+  addDemoCube();
   animate();
 }
 
@@ -25,3 +26,11 @@ function animate() {
   requestAnimationFrame(animate);
   renderer.render(scene, camera);
 }
+
+function addDemoCube() {
+  const geo = new THREE.BoxGeometry(10, 10, 10);
+  const mat = new THREE.MeshStandardMaterial({ color: 0x00ff88 });
+  const cube = new THREE.Mesh(geo, mat);
+  scene.add(cube);
+}
+
