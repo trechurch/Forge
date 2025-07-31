@@ -1,5 +1,6 @@
 // forgeBands.js
 
+import { bindWhenReady } from './uiReady.js';
 import { generateAvTier } from './avTierGenerator.js';
 import { createDirectionalCap } from './createDirectionalCap.js';
 
