@@ -1,3 +1,6 @@
+// forgeEntry.js
+
+import { bindWhenReady } from './uiReady.js';
 import { initAVDeployer } from './avBandDeployer.js';
 import { buildTexturePanel } from './texturePanel.js';
 import { materialBank } from './materialBank.js';
