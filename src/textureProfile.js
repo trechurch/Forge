@@ -1,4 +1,4 @@
-// textureProfile.js
+// ./src/textureProfile.js
 
 import { bindWhenReady } from './uiReady.js';
 
