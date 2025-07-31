@@ -17,8 +17,11 @@ initDOM({
   'deploy-btn': { tag: 'button' },
   'forge-panel': { classes: ['ui-zone'] },
   'inspector-panel': { classes: ['ui-zone'] }
-
 });
+
+import { initYThree } from './YThreeRenderer.js';
+
+initYThree();
 
 // 🪐 Three.js setup
   const scene = new THREE.Scene();
