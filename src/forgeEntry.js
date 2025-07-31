@@ -14,8 +14,19 @@ initDOM({
   'lat-input': { tag: 'input' },
   'lon-input': { tag: 'input' },
   'mat-input': { tag: 'input' },
-  'deploy-btn': { tag: 'button' }
+  'deploy-btn': { tag: 'button' },
+  'forge-panel': { classes: ['ui-zone'] },
+  'inspector-panel': { classes: ['ui-zone'] }
 });
+
+import { initYThree } from './YThreeRenderer.js';
+
+initYThree();
+
+import { initForgeUI } from './capUi.js';
+
+initForgeUI({ onDeploy: placeCap });
+
 
 // 🪐 Three.js setup
   const scene = new THREE.Scene();
