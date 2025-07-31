@@ -1,4 +1,4 @@
-// materialBank.js
+// ./src/materialBank.js
 
 import { bindWhenReady } from './uiReady.js';
 
