@@ -1,5 +1,5 @@
 // ./src/forgeEntry.js
-import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js';
+
 import { initDOM } from './domInit.js';
 import { buildTexturePanel } from './texturePanel.js';
 import { materialBank } from './materialBank.js';
