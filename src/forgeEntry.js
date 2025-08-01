@@ -26,7 +26,7 @@ initYThree();
 import { initForgeUI } from './capUi.js';
 
 initForgeUI({ onDeploy: placeCap });
-
+import * as THREE from 'three';
 
 // 🪐 Three.js setup
   const scene = new THREE.Scene();
